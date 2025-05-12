@@ -96,8 +96,8 @@ jobs:
           restore-keys: |
             Library-${{ runner.os }}-${{ matrix.unityVersion }}-${{ matrix.targetPlatform }}-
             Library-${{ runner.os }}-${{ matrix.unityVersion }}-
-      - name: Free disk space for Android build
-        if: matrix.targetPlatform == 'Android'
+      - name: Free disk space for Android/WebGL build
+        if: matrix.targetPlatform == 'Android' || matrix.targetPlatform == 'WebGL'
         uses: jlumbroso/free-disk-space@v1.3.1
       - name: Build project
         uses: game-ci/unity-builder@v4
