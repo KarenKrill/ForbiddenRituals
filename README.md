@@ -1,5 +1,7 @@
 # ForbiddenRituals
+![GameIcon](Assets/ForbiddenRituals/Content/Sprites/GameIcon.png)
 
+---
 ### Game description
 Forbidden Rituals is a survival horror game about forgotten rituals and the greedy people who found them. Players must unravel the mystery of the rituals and turn them before the evil gets out.
 
