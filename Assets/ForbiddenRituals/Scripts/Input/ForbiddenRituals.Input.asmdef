@@ -1,0 +1,17 @@
+{
+    "name": "ForbiddenRituals.Input",
+    "rootNamespace": "ForbiddenRituals.Input",
+    "references": [
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:e0880f6dfd4e5b04b804fc9c5ac2ef91"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

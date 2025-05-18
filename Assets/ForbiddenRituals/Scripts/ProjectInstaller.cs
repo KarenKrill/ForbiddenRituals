@@ -14,15 +14,21 @@ using KarenKrill.Utilities;
 namespace ForbiddenRituals
 {
     //using Abstractions;
-    //using Input.Abstractions;
-    //using Input;
+    using Input.Abstractions;
+    using Input;
     //using Movement;
 
     public class ProjectInstaller : MonoInstaller
     {
         public override void InstallBindings()
         {
-            //Container.Bind<IInputActionService>().To<InputActionService>().FromNew().AsSingle().NonLazy();
+            Container.Bind<IInputActionService>().To<InputActionService>().FromNew().AsSingle().OnInstantiated((context, target) =>
+            {
+                if (target is InputActionService inputActionService)
+                {
+                    inputActionService.SetActionMap(ActionMap.UI);
+                }
+            }).NonLazy();
 #if DEBUG
             Container.Bind<ILogger>().To<Logger>().FromNew().AsSingle().WithArguments(new DebugLogHandler());
 #else
