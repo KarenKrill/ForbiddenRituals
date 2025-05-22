@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/ForbiddenRituals/Scenes/BootScene.unity
+    guid: 2fc0a09fb0188644f8b65ff9af9daeaf
+  - enabled: 1
     path: Assets/ForbiddenRituals/Scenes/MenuScene.unity
     guid: 1eaeb957b88949f428507f0609f78edf
   - enabled: 1

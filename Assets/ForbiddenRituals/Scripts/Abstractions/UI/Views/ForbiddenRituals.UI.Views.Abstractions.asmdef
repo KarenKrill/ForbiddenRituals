@@ -1,8 +1,8 @@
 {
-    "name": "ForbiddenRituals.Abstractions",
-    "rootNamespace": "ForbiddenRituals.Abstractions",
+    "name": "ForbiddenRituals.UI.Views.Abstractions",
+    "rootNamespace": "ForbiddenRituals.UI.Views.Abstractions",
     "references": [
-        "GUID:a00509254bb803a4d89b998f2d85ff80"
+        "GUID:7a46791a36c29db4382df4ea59e1f085"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

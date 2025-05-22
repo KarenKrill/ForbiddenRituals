@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 using KarenKrill.StateSystem.Abstractions;
 
-namespace ForbiddenRituals
+namespace ForbiddenRituals.Abstractions
 {
     public class GameStateGraph : IStateGraph<GameState>
     {
@@ -12,9 +12,9 @@ namespace ForbiddenRituals
 
         private readonly IDictionary<GameState, IList<GameState>> _transitions = new Dictionary<GameState, IList<GameState>>()
         {
-            { GameState.Initial, new List<GameState> { GameState.SceneLoad } },
+            { GameState.Initial, new List<GameState> { GameState.SceneLoad, GameState.MainMenu } },
             { GameState.SceneLoad, new List<GameState> { GameState.MainMenu, GameState.CutScene, GameState.Gameplay } },
-            { GameState.MainMenu, new List<GameState> { GameState.Lobby, GameState.SceneLoad, GameState.Exit } },
+            { GameState.MainMenu, new List<GameState> { GameState.Lobby, GameState.SceneLoad, GameState.Exit, GameState.Gameplay } },
             { GameState.Lobby, new List<GameState> { GameState.MainMenu, GameState.SceneLoad } },
             { GameState.CutScene, new List<GameState> { GameState.SceneLoad, GameState.Gameplay, GameState.MainMenu } },
             { GameState.Gameplay, new List<GameState> { GameState.Pause, GameState.CutScene, GameState.GameEnd } },

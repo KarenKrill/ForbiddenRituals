@@ -1,4 +1,4 @@
-namespace ForbiddenRituals
+namespace ForbiddenRituals.Abstractions
 {
     public enum GameState
     {
@@ -12,4 +12,5 @@ namespace ForbiddenRituals
         Pause,
         Exit
     }
+    /*В игре есть следующие состояния: Initial, SceneLoad, MainMenu, Lobby, CutScene, Gameplay, GameEnd, Pause, Exit. С переходами между этими состояниями всё понятно. Но немного не понимаю, что */
 }
