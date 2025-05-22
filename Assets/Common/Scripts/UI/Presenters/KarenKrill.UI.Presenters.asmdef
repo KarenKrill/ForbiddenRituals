@@ -1,9 +1,8 @@
 {
-    "name": "KarenKrill.UI.Presenters.Abstractions",
-    "rootNamespace": "KarenKrill.UI.Presenters.Abstractions",
+    "name": "KarenKrill.UI.Presenters",
+    "rootNamespace": "KarenKrill.UI.Presenters",
     "references": [
-        "GUID:9ce69da7243473a4f8e5dd1e9dbae22d",
-        "GUID:7a46791a36c29db4382df4ea59e1f085"
+        "GUID:760c2e9496ca26e4d8f30deca2d52b53"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
